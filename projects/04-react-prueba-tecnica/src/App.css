@@ -7,14 +7,50 @@ main {
   font-family: system-ui;
 }
 
-section {
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 2rem;
+button {
+  font-size: 1.5rem;
+  padding: 1.5rem 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.2s ease-in-out;
+
+  /* Neumorphism styles */
+  background-color: #f0f0f0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.5);
+  
 }
 
-section img {
-  max-width: 320px;
-  height: auto;
+button:hover {
+  background: #232323;
+  color: #fff;
+}
+
+.catCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 1rem;
+  
+  /* Neumorphism styles */
+  background-color: #f0f0f0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1), -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.catCard img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.catFact {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
